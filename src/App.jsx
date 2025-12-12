@@ -45,8 +45,9 @@ export default function App() {
     pink: ["#ff9a9e", "#fecf63"],
     blue: ["#3a1c71", "#ffaf7b"],
     green: ["#C9FFBF", "#FFAFBD"],
-    gold: ["#499FA4", "#E9BC8B"],
+    gold: ["#7cd8ddff", "#ffc383ff"],
     white: ["#ffffff", "#ffffff"],
+    silver: ["#fffdfdff" , "#e8f3afff"]
   };
 
   const drawBackground = (ctx, w, h) => {
@@ -150,7 +151,7 @@ export default function App() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
 
-    const W = 900;
+    const W = 700;
     const H = 550;
     canvas.width = W;
     canvas.height = H;
@@ -209,6 +210,7 @@ export default function App() {
         <button className="theme-btn" onClick={() => setTheme("green")}>Soft Green</button>
         <button className="theme-btn" onClick={() => setTheme("gold")}>Premium Gold</button>
         <button className="theme-btn" onClick={() => setTheme("white")}>Plain White</button>
+        <button className="theme-btn" onClick={() => setTheme("silver")}>Plain silver</button>
 
         <h3>Mode</h3>
         <div className="mode-row">
